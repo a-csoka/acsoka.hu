@@ -1,7 +1,7 @@
 <script>
-	import Sidebar from './Components/Sidebar.svelte';
+	import Navbar from './Components/Navbar.svelte';
 </script>
 
 <div class="h-screen w-screen">
-    <Sidebar />
+    <Navbar />
 </div>
