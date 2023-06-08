@@ -6,6 +6,9 @@ const config = {
 			fontFamily:{
 				Brooklyn: ["Brooklyn"],
 				Gilmer: ["Gilmer"]
+			},
+			spacing: {
+				'160': '40rem',
 			}
 		}
 	},
