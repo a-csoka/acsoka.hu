@@ -43,11 +43,11 @@
     showcaseMover()  
 </script>
 
-<div class="relative flex flex-row overflow-x-clip">
-    <div class="absolute min-w-full h-160 top-14 bg-red-800 color-white text-gray-200 items-center duration-{directions[2]}" style="left: {directions[0]}%">
+<div class="relative flex w-full min-h-fit overflow-x-clip">
+    <div class="relative table-cell min-w-full h-full color-white text-gray-200 items-center duration-{directions[2]}" style="left: {directions[0]}%">
         <ShowcaseCard Name={works[workCount].Name} NameLink={works[workCount].NameLink} Title={works[workCount].Title} Description={works[workCount].Description} Image={works[workCount].Image}/>
     </div>
-    <div class="absolute min-w-full h-160 top-14 bg-red-800 color-white text-gray-200 items-center duration-{directions[2]}" style="left: {directions[1]}%">
+    <div class="absolute min-w-full h-full color-white text-gray-200 items-center duration-{directions[2]}" style="left: {directions[1]}%">
         <ShowcaseCard Name={works[(workCount >= works.length-1 ? 0 : workCount+1)].Name} NameLink={works[(workCount >= works.length-1 ? 0 : workCount+1)].NameLink} Title={works[(workCount >= works.length-1 ? 0 : workCount+1)].Title} Description={works[(workCount >= works.length-1 ? 0 : workCount+1)].Description} Image={works[(workCount >= works.length-1 ? 0 : workCount+1)].Image}/>
     </div>
 </div>
