@@ -6,8 +6,6 @@
 
 <div class="h-screen w-screen">
     <Navbar />
-    <div class="relative top-16">
-        <Showcase />
-        <Stacks />
-    </div>
+    <Showcase />
+    <Stacks />
 </div>

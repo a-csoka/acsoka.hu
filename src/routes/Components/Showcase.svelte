@@ -1,7 +1,28 @@
 <script>
+    import { onMount } from 'svelte';
+    import { slide, fly } from 'svelte/transition';
     import ShowcaseCard from './ShowcaseCard.svelte';
 
-    var workCount = 0
+    let directions = [0, 100]
+    let workCount = 0
+    function showcaseMover(){
+        setTimeout(() => {
+            directions = [-100, 0]
+            setTimeout(() => {
+                workCount = workCount + 1
+                if(workCount > works.length-1){
+                    workCount = 0
+                }
+                directions = [0, 100]
+            }, 1000)
+            showcaseMover()
+        }, 15000)
+    }
+    let ready = false;
+    onMount(() => {
+        ready = true
+        showcaseMover()
+    });
     const works = [
         {
             Name: "Magyar Hot Pursuit",
@@ -25,29 +46,33 @@
             Image: "Images/Showcase/reserveit.png",
         }
     ]
-
-    var directions = [0, 100, 1000]
+    /*
     function showcaseMover(){
         setTimeout(() => {
-            directions = [-100, 0, 1000]
+            directions[0] = -100
+            directions[1] = 0
             setTimeout(() => {
                 workCount = workCount + 1
                 if(workCount > works.length-1){
                     workCount = 0
                 }
-                directions = [0, 100, 0]
+                directions = [0, 100]
             }, 1000)
             showcaseMover()
         }, 15000)
     }
     showcaseMover()  
+    */
 </script>
 
-<div class="relative flex w-full min-h-fit overflow-x-clip">
-    <div class="relative table-cell min-w-full h-full color-white text-gray-200 items-center duration-{directions[2]}" style="left: {directions[0]}%">
-        <ShowcaseCard Name={works[workCount].Name} NameLink={works[workCount].NameLink} Title={works[workCount].Title} Description={works[workCount].Description} Image={works[workCount].Image}/>
-    </div>
-    <div class="absolute min-w-full h-full color-white text-gray-200 items-center duration-{directions[2]}" style="left: {directions[1]}%">
-        <ShowcaseCard Name={works[(workCount >= works.length-1 ? 0 : workCount+1)].Name} NameLink={works[(workCount >= works.length-1 ? 0 : workCount+1)].NameLink} Title={works[(workCount >= works.length-1 ? 0 : workCount+1)].Title} Description={works[(workCount >= works.length-1 ? 0 : workCount+1)].Description} Image={works[(workCount >= works.length-1 ? 0 : workCount+1)].Image}/>
-    </div>
+
+<div class="relative flex flex-row w-full min-h-fit overflow-x-clip">
+    {#if ready}
+        <div class="relative table-cell min-w-full h-full color-white text-gray-200 items-center" style="left: {directions[0]}%; transition: left {(directions[0] == -100 ? 1 : 0)}s">
+            <ShowcaseCard Name={works[workCount].Name} NameLink={works[workCount].NameLink} Title={works[workCount].Title} Description={works[workCount].Description} Image={works[workCount].Image}/>
+        </div>
+        <div class="absolute min-w-full h-full color-white text-gray-200 items-center" style="left: {directions[1]}%; transition: left {(directions[1] == 0 ? 1 : 0)}s">
+            <ShowcaseCard Name={works[(workCount >= works.length-1 ? 0 : workCount+1)].Name} NameLink={works[(workCount >= works.length-1 ? 0 : workCount+1)].NameLink} Title={works[(workCount >= works.length-1 ? 0 : workCount+1)].Title} Description={works[(workCount >= works.length-1 ? 0 : workCount+1)].Description} Image={works[(workCount >= works.length-1 ? 0 : workCount+1)].Image}/>
+        </div>
+    {/if}
 </div>
