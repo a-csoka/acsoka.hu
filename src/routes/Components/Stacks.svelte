@@ -11,7 +11,7 @@
     */
 </script>
 
-<section id="Stacks" class="w-full h-fit bg-[url('Images/Stacks/Background.jpg')] bg-bottom">
+<section id="Stacks" class="w-full h-fit bg-bottom" style="background-image: url('Images/Stacks/Background.png');">
     <div class="text-white text-center font-Gilmer text-4xl pt-8">Technológiák</div>
     <div class="grid py-8 grid-cols-1 md:grid-cols-2 ">
         <StackCard Name="React" Image="Images/Stacks/React.png" Level=3 Color="bg-[#61DBFB]"/>
