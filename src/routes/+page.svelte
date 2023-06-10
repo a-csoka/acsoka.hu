@@ -4,7 +4,7 @@
     import Stacks from './Components/Stacks.svelte';
 </script>
 
-<div class="h-screen w-screen">
+<div class="h-screen w-full">
     <Navbar />
     <Showcase />
     <Stacks />

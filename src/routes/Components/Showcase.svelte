@@ -42,27 +42,10 @@
             Name: "ReserveIt",
             NameLink: "https://github.com/a-csoka/ReserveIt",
             Title: "Társkészítő",
-            Description: "Egy olyan weboldal, amelyen vállalkozások időpontokat tudnak kiosztani ügyfeleiknek. A felhasználóknak lehetőségük van saját vállalkozás létrehozására, ileltve a saját időpontjaik nyomonkövetésére. A létrehozott vállalkozások tulajdonosa tud dolgozókat felvenni, akik tudnak a felhasználók számára időpontokat kiosztani. A weboldal frontend része ReactJS-ben készült, a backend ExpressJS-ben, az adatbázis pedig MySQL alapú. Ez volt a Szoftverfejlesztő és -tesztelő szakdolgozatom, amelyet ketten készítettünk. A fejlesztés során a társam felelt a design elemekért, én pedig a programozásért.",
+            Description: "Egy olyan weboldal, amelyen vállalkozások időpontokat tudnak kiosztani ügyfeleiknek. A felhasználóknak lehetőségük van saját vállalkozás létrehozására, ileltve a saját időpontjaik nyomonkövetésére. A létrehozott vállalkozások tulajdonosa tud dolgozókat felvenni, akik tudnak a felhasználók számára időpontokat kiosztani. A weboldal frontend része ReactJS-ben készült, a backend ExpressJS-ben, az adatbázis pedig MySQL alapú. Ez volt a Szoftverfejlesztő és -tesztelő szakdolgozatom, amelyet ketten dolgoztunk. A fejlesztés során a társam felelt a design elemekért, én pedig a programozásért.",
             Image: "Images/Showcase/reserveit.png",
         }
     ]
-    /*
-    function showcaseMover(){
-        setTimeout(() => {
-            directions[0] = -100
-            directions[1] = 0
-            setTimeout(() => {
-                workCount = workCount + 1
-                if(workCount > works.length-1){
-                    workCount = 0
-                }
-                directions = [0, 100]
-            }, 1000)
-            showcaseMover()
-        }, 15000)
-    }
-    showcaseMover()  
-    */
 </script>
 
 
