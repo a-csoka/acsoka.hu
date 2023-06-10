@@ -6,7 +6,7 @@
     export let Color
 </script>
 
-<div class="{Color} bg-opacity-50 mx-auto my-6 w-10/12 md:w-[30rem] h-[40rem] rounded-2xl shadow-lg shadow-black">
+<div class="{Color} bg-opacity-50 mx-auto my-6 w-10/12 md:w-min-fit md:w-6/12 h-[40rem] rounded-2xl shadow-lg shadow-black">
     <div class="flex w-full h-fit mt-8">
         <img class="h-72 w-fit mx-auto" src={Image} alt="Hiba a betöltés során!">
     </div>

@@ -49,7 +49,7 @@
 </script>
 
 
-<div class="relative flex flex-row w-full min-h-fit overflow-x-clip">
+<section class="relative flex flex-row w-full min-h-fit overflow-x-clip">
     {#if ready}
         <div class="relative table-cell min-w-full h-full color-white text-gray-200 items-center" style="left: {directions[0]}%; transition: left {(directions[0] == -100 ? 1 : 0)}s">
             <ShowcaseCard Name={works[workCount].Name} NameLink={works[workCount].NameLink} Title={works[workCount].Title} Description={works[workCount].Description} Image={works[workCount].Image}/>
@@ -58,4 +58,4 @@
             <ShowcaseCard Name={works[(workCount >= works.length-1 ? 0 : workCount+1)].Name} NameLink={works[(workCount >= works.length-1 ? 0 : workCount+1)].NameLink} Title={works[(workCount >= works.length-1 ? 0 : workCount+1)].Title} Description={works[(workCount >= works.length-1 ? 0 : workCount+1)].Description} Image={works[(workCount >= works.length-1 ? 0 : workCount+1)].Image}/>
         </div>
     {/if}
-</div>
+</section>
