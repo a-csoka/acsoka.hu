@@ -4,7 +4,6 @@
         <div class="flex font-Gilmer text-xs md:text-base md:float-right  justify-center">
             <a class="text-center mx-1 md:mx-3">Technológiák</a>
             <a class="text-center mx-1 md:mx-3">Tanulmányok</a>
-            <a class="text-center mx-1 md:mx-3">Szolgáltatások</a>
             <a class="text-center mx-1 md:mx-3">Elérhetőség</a>
         </div>
     </div>

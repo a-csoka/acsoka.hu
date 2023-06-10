@@ -2,13 +2,12 @@
     export let Name;
     export let Image;
     export let Level;
-    export let Refs;
     export let Color = "bg-[{#FF0000}]";
 
     const skillLevels = ["Kezdő", "Haladó", "Kompetens", "Profi", "Mester"]
 </script>
 
-<div class="flex text-white {Color} bg-opacity-50 h-40 mx-2 md:mx-6 mb-2 rounded-2xl">
+<div class="flex text-white {Color} bg-opacity-50 h-40 mx-2 md:mx-6 mb-2 rounded-2xl shadow-lg shadow-black">
     <div class="flex h-full w-52 mx-3 items-center">
         <img class="w-fit h-5/6 mx-auto" src={Image} alt="Hiba a betöltés során!">
     </div>
