@@ -54,6 +54,9 @@
         return response
     }
 
+    console.log(new Date().getHours() * 60 + new Date().getMinutes())
+    
+
     onMount(async () => {
         classes = await fetchClasses()
 
@@ -81,6 +84,8 @@
             }
         })
     })
+
+    console.log(new Date().getDay())
 </script>
 
 <div class="fixed flex flex-row w-full h-full overflow-y-auto overflow-x-hidden">
@@ -91,7 +96,7 @@
                 <div class="font-Brooklyn text-gray-200">{(hour+8 < 10 ? "0"+(hour+8) : hour+8)}:00</div>
             </div>
         {/each}
-        <div class="absolute w-screen h-[0.1rem] bg-red-800 top-10 z-10" style="top: {((new Date()).getMinutes()+(new Date).getHours()*60-480)/60*6+4.5}rem;"/>
+        <div class="absolute {currentDay == (new Date).getDay() ? "" : "hidden md:block"} w-screen h-[0.1rem] bg-red-800 top-10 z-10" style="top: {(new Date().getMinutes() + new Date().getHours()*60 - 480)/60*6}rem;"/>
     </div>
     <div class="relative flex-col w-full h-full">
         <div class="relative flex flex-row h-16 text-gray-200 rounded-t-xl mt-2 font-Gilmer">
