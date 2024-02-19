@@ -6,17 +6,17 @@
 
     let directions = [0, 100]
     let workCount = 0
-    let nextCont = 0
+    let nextCount = 0
     let isMoving = false
     let direction = "LeftToRight"
     function showcaseMover(){
         timer = setTimeout(() => {
-            forceMove((workCount+1 < works.length-1 ? workCount+1 : 0))
+            forceMove((workCount+1 > works.length-1 ? 0 : workCount+1))
         }, 15000)
     }
 
     function forceMove(next){
-        nextCont = next
+        nextCount = next
         clearTimeout(timer)
         
         if(next > workCount || (next == 0 && workCount == works.length-1)){
@@ -38,9 +38,9 @@
             timer = setTimeout(() => {
                 direction = "LeftToRight"
                 workCount = next
-                nextCont = workCount + 1
-                if(nextCont > works.length-1){
-                    nextCont = 0
+                nextCount = workCount + 1
+                if(nextCount > works.length-1){
+                    nextCount = 0
                 }
                 isMoving = false
                 directions = [0, 100]
@@ -82,10 +82,10 @@
 <section class="relative flex flex-row w-full min-h-fit overflow-x-clip">
     {#if ready}
         <div class="relative table-cell min-w-full h-full color-white text-gray-200 items-center" style="left: {directions[0]}%; transition: left {(isMoving ? 1 : 0)}s">
-            <ShowcaseCard Name={works[(direction == "LeftToRight" ? workCount : nextCont)].Name} NameLink={works[(direction == "LeftToRight" ? workCount : nextCont)].NameLink} Title={works[(direction == "LeftToRight" ? workCount : nextCont)].Title} Description={works[(direction == "LeftToRight" ? workCount : nextCont)].Description} Image={works[(direction == "LeftToRight" ? workCount : nextCont)].Image} Current={(direction == "LeftToRight" ? workCount : nextCont)} Limit={works.length} forceMove={forceMove}/>
+            <ShowcaseCard Name={works[(direction == "LeftToRight" ? workCount : nextCount)].Name} NameLink={works[(direction == "LeftToRight" ? workCount : nextCount)].NameLink} Title={works[(direction == "LeftToRight" ? workCount : nextCount)].Title} Description={works[(direction == "LeftToRight" ? workCount : nextCount)].Description} Image={works[(direction == "LeftToRight" ? workCount : nextCount)].Image} Current={(direction == "LeftToRight" ? workCount : nextCount)} Limit={works.length} forceMove={forceMove}/>
         </div>
         <div class="absolute min-w-full h-full color-white text-gray-200 items-center" style="left: {directions[1]}%; transition: left {(isMoving ? 1 : 0)}s">
-            <ShowcaseCard Name={works[(direction == "LeftToRight" ? nextCont : workCount)].Name} NameLink={works[(direction == "LeftToRight" ? nextCont : workCount)].NameLink} Title={works[(direction == "LeftToRight" ? nextCont : workCount)].Title} Description={works[(direction == "LeftToRight" ? nextCont : workCount)].Description} Image={works[(direction == "LeftToRight" ? nextCont : workCount)].Image} Current={(direction == "LeftToRight" ? nextCont : workCount)} Limit={works.length} forceMove={forceMove}/>
+            <ShowcaseCard Name={works[(direction == "LeftToRight" ? nextCount : workCount)].Name} NameLink={works[(direction == "LeftToRight" ? nextCount : workCount)].NameLink} Title={works[(direction == "LeftToRight" ? nextCount : workCount)].Title} Description={works[(direction == "LeftToRight" ? nextCount : workCount)].Description} Image={works[(direction == "LeftToRight" ? nextCount : workCount)].Image} Current={(direction == "LeftToRight" ? nextCount : workCount)} Limit={works.length} forceMove={forceMove}/>
         </div>
     {/if}
 </section>
