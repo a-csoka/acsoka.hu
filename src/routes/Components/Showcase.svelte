@@ -16,6 +16,10 @@
     }
 
     function forceMove(next){
+        if (workCount == next){
+            return false
+        }
+
         nextCount = next
         clearTimeout(timer)
         
@@ -35,18 +39,17 @@
                 isMoving = true
                 directions = [-100, 0]
             }
+
             timer = setTimeout(() => {
-                direction = "LeftToRight"
-                workCount = next
-                nextCount = workCount + 1
-                if(nextCount > works.length-1){
-                    nextCount = 0
-                }
-                isMoving = false
-                directions = [0, 100]
+                workCount = next                  
+                timer = setTimeout(() => {
+                    direction = "LeftToRight"
+                    isMoving = false
+                    directions = [0, 100]
+                    showcaseMover()
+                }, 120)
             }, 1000)
-            showcaseMover()
-        }, 50)
+        }, 10)
     }
     let ready = false;
     onMount(() => {
