@@ -32,8 +32,6 @@
         response = await response.json()
         return response
     }
-
-    console.log(new Date().getHours() * 60 + new Date().getMinutes())
     
 
     onMount(async () => {
@@ -63,8 +61,6 @@
             }
         })
     })
-
-    console.log(new Date().getDay())
 </script>
 
 <div class="fixed flex flex-row w-full h-full overflow-y-auto overflow-x-hidden">
