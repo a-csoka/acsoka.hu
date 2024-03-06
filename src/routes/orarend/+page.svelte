@@ -82,14 +82,14 @@
         <div class="w-full h-full">
             {#each classes as element, Index}
                 <div class="absolute hidden md:block w-[20%] rounded-xl {(element.Color ? element.Color : "bg-[#009db4] border-[#006b82]")} border  " style="height: {element.Height}; left: {(element.Day-1)*20}%; top: {(element.StartTime-480)/60*6+4.5}rem;">
-                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-lg" : "text-md") } font-bold mt-2">{element.Name}</div>
-                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-md" : "text-xs") }">{element.Classroom}</div>
-                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-md" : "text-xs") }">{element.TimeText}</div>
+                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-lg" : "text-base") }z font-bold mt-2">{element.Name}</div>
+                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-base" : "text-xs") }">{element.Classroom}</div>
+                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-base" : "text-xs") }">{element.TimeText}</div>
                 </div>
                 <div class="absolute {(element.Day == currentDay ? "block" : "hidden")} md:hidden w-[100%] rounded-xl {(element.Color ? element.Color : "bg-[#009db4] border-[#006b82]")} border " style="height: {element.Height}; top: {(element.StartTime-480)/60*6+4.5}rem;">
-                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-lg" : "text-md") } font-bold mt-2">{element.Name}</div>
-                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-md" : "text-xs") }">{element.Classroom}</div>
-                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-md" : "text-xs") }">{element.TimeText}</div>
+                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-lg" : "text-base") } font-bold mt-2">{element.Name}</div>
+                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-base" : "text-xs") }">{element.Classroom}</div>
+                    <div class="text-center font-Gilmer { (element.EndTime - element.StartTime >= 60 ? "text-base" : "text-xs") }">{element.TimeText}</div>
                 </div>
             {/each}
         </div>
