@@ -1,48 +1,45 @@
-import { Navigate } from "react-router";
-import type { Route } from "./+types/Home";
-
-import React from "react";
-import { Helmet } from "react-helmet";
-
+import { useEffect } from 'react';
 import en from "../languages/en.json";
 import hu from "../languages/hu.json";
+import type { Route } from './+types/Home';
+import { useNavigate } from 'react-router';
 
 const langMap = {
   en: en,
   hu: hu
 } as const;
 
-export function head({ params }: { params: { lang: string } }) {
-    const lang = params.lang;
-    const meta = langMap[lang as keyof typeof langMap] ?? langMap;
+const allowedLangs = ["hu", "en"] as const;
+export function meta({ params }: Route.LoaderArgs) {
+    const isAllowedLang = allowedLangs.includes(params.lang as typeof allowedLangs[number]);
+    const langJSON = langMap[params.lang as "hu" | "en"] ?? langMap;
+    if (!isAllowedLang) {
+        return false
+    }
   
-    return {
-      title: meta.title,
-      meta: [
-        {
-          name: "description",
-          content: meta.description
-        }
-      ]
-    };
+    return [
+      { title: langJSON.title },
+      { name: "description", content: langJSON.description },
+    ];
   }
 
-const allowedLangs = ["hu", "en"] as const;
-export default function Home({params} : Route.LoaderArgs) {
-    const isAlloweddLang = allowedLangs.includes(params.lang as typeof allowedLangs[number]);
-    if (!isAlloweddLang) {
-        return <Navigate to="/" replace />;
-    }
-    
-    const meta = langMap[params.lang as "hu" | "en"] ?? langMap;
+
+const Home = (props : Route.LoaderArgs) => {
+    const navigate = useNavigate();
+    useEffect(() => {
+        if(!meta(props)) {
+            const language = (navigator.language).startsWith('hu') ? '/hu' : '/en';
+            navigate(language, {replace: true});
+        }
+    }, [])
+
+    if (meta(props) === false) return null;
+
     return (
         <div>
-            <Helmet>
-                <title>{meta.title}</title>
-                <meta name="description" content={meta.description} />
-            </Helmet>
-            <h1>Welcome to the Home Page</h1>
-            <p>Language: {params.lang}</p>
+            <h1>Home</h1>
+            <p>Language: {props.params.lang}</p>
         </div>
     );
 }
+export default Home;
