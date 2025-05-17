@@ -2,5 +2,9 @@
     "Meta": {
         "title": "Csóka Csaba",
         "description": "hu"
+    },
+    "Navbar": {
+        "en": "🇬🇧 Angol",
+        "hu": "🇭🇺 Magyar"
     }
 }

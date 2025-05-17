@@ -1,14 +1,24 @@
 @import "tailwindcss";
 
-@theme {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@theme {
+  --font-Montserrat: "Montserrat";
+  --font-Brooklyn: "Brooklyn";
+
+  --color-MainBlue: #00c5f0;
+  --color-EerieBlack: #222222;
+  --color-LuckyGreen: #0c9e5a;
 }
+
+@font-face {  font-family: Brooklyn; src: url("./assets/fonts/Brooklyn.ttf");}
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-linear-to-b from-black to-EerieBlack h-full;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
 }
+

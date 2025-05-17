@@ -5,13 +5,14 @@ import { Helmet } from 'react-helmet';
 import { LanguageContext } from '~/context/LanguageContext';
 import en from "../languages/en.json";
 import hu from "../languages/hu.json";
+import Navbar from '~/components/Navbar_component';
 
 const DefaultLanguage = "en";
 const langMap = {
   en: en,
   hu: hu
 } as const;
-const allowedLangs = ["hu", "en"] as const;
+const allowedLangs = ["hu", "en"];
 type AllowedLang = keyof typeof langMap;
 
 const MetaTags = ({ title, description }: { title: string; description: string }) => (
@@ -40,12 +41,10 @@ const App = (props: Route.LoaderArgs) => {
 
     const lang = props.params.lang as AllowedLang;
     const langJSON = langMap[props.params.lang as AllowedLang];
-
     return (
-        <LanguageContext.Provider value={{ lang, translations: langJSON }}>
+        <LanguageContext.Provider value={{ lang, translations: langJSON, allowedLangs: allowedLangs }}>
             <MetaTags title={langJSON.Meta.title} description={langJSON.Meta.description} />
-            <h1>{langJSON.Meta.title}</h1>
-            <p>Language: {props.params.lang}</p>
+            <Navbar />
         </LanguageContext.Provider>
     );
 };
