@@ -7,10 +7,13 @@ const Navbar: React.FC = () => {
     const navigate = useNavigate()
     const language = LangContext.translations.Navbar
 
+    const [selectedLang, setSelectedLang] = useState(LangContext.lang)
+
     const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
         if(event.target.value != LangContext.lang){
-            navigate(`/${event.target.value}`, { replace: true });
+            navigate(`/${event.target.value}`, {replace: true});
         }
+        setSelectedLang(event.target.value)
     }
 
     return (
@@ -28,7 +31,7 @@ const Navbar: React.FC = () => {
                             <select
                                 name="languages"
                                 id="languages"
-                                defaultValue={LangContext.lang}
+                                value={selectedLang}
                                 onChange={(e) => changeLanguage(e)}
                                 className="w-28 bg-gray-800 text-white border border-gray-600 rounded-md px-3 py-2 outline-none"
                                 >
