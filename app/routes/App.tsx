@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
-import type { Route } from './+types/Home';
+import type { Route } from './+types/App';
 import { useNavigate } from 'react-router';
 import { Helmet } from 'react-helmet';
+import { LanguageContext } from '~/context/LanguageContext';
 import en from "../languages/en.json";
 import hu from "../languages/hu.json";
 
@@ -20,7 +21,7 @@ const MetaTags = ({ title, description }: { title: string; description: string }
     </Helmet>
 );
 
-const Home = (props: Route.LoaderArgs) => {
+const App = (props: Route.LoaderArgs) => {
     const navigate = useNavigate();
     const isAllowedLang = allowedLangs.includes(props.params.lang as AllowedLang);
 
@@ -37,14 +38,15 @@ const Home = (props: Route.LoaderArgs) => {
         return <p>Redirecting...</p>;
     }
 
+    const lang = props.params.lang as AllowedLang;
     const langJSON = langMap[props.params.lang as AllowedLang];
 
     return (
-        <div>
-            <MetaTags title={langJSON.title} description={langJSON.description} />
-            <h1>{langJSON.title}</h1>
+        <LanguageContext.Provider value={{ lang, translations: langJSON }}>
+            <MetaTags title={langJSON.Meta.title} description={langJSON.Meta.description} />
+            <h1>{langJSON.Meta.title}</h1>
             <p>Language: {props.params.lang}</p>
-        </div>
+        </LanguageContext.Provider>
     );
 };
-export default Home;
+export default App;
