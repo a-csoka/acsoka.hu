@@ -5,7 +5,10 @@ import { useLanguage } from '~/context/LanguageContext';
 const Navbar: React.FC = () => {
     const LangContext = useLanguage()
     const navigate = useNavigate()
-    const language = LangContext.translations.Navbar
+    const language: Record<string, string> = {
+        "en": "🇬🇧 English",
+        "hu": "🇭🇺 Magyar"
+    }
 
     const [selectedLang, setSelectedLang] = useState(LangContext.lang)
 
@@ -27,13 +30,13 @@ const Navbar: React.FC = () => {
                         <div className=''>
                             TODO
                         </div>
-                        <div className="mr-8">
+                        <div className="mr-8 font-Montserrat">
                             <select
                                 name="languages"
                                 id="languages"
                                 value={selectedLang}
                                 onChange={(e) => changeLanguage(e)}
-                                className="w-28 bg-gray-800 text-white border border-gray-600 rounded-md px-3 py-2 outline-none"
+                                className="w-32 bg-gray-800 text-white border border-gray-600 rounded-md px-3 py-2 outline-none"
                                 >
                                 {LangContext.allowedLangs.map((lang) => (
                                 <option key={lang} value={lang} className="bg-gray-800 text-white">
