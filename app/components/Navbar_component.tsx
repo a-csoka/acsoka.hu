@@ -20,23 +20,23 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <nav className='w-full mt-2'>
-            <div className='w-[99%] h-12 mx-auto bg-gradient-to-r from-MainBlue to-LuckyGreen pt-1 rounded-md'>
+        <nav className='w-full mt-2 fixed top-0 left-0 z-50'>
+            <div className='w-[98.75%] h-12 mx-auto bg-gradient-to-r from-MainBlue to-LuckyGreen pt-1 rounded-md'>
                 <div className='w-full h-full rounded-md bg-gray-900'>
                     <div className='flex flex-row items-center h-full w-full justify-between'>
-                        <div className='font-Brooklyn text-xl ml-8 bg-gradient-to-r from-MainBlue to-LuckyGreen text-transparent bg-clip-text'>
+                        <div className='font-Gilmer font-bold text-xl ml-8 bg-gradient-to-r from-MainBlue to-LuckyGreen text-transparent bg-clip-text'>
                             ACSOKA.HU
                         </div>
                         <div className=''>
                             TODO
                         </div>
-                        <div className="mr-8 font-Montserrat">
+                        <div className="mr-8">
                             <select
                                 name="languages"
                                 id="languages"
                                 value={selectedLang}
                                 onChange={(e) => changeLanguage(e)}
-                                className="w-32 bg-gray-800 text-white border border-gray-600 rounded-md px-3 py-2 outline-none"
+                                className="w-32 bg-gray-800 text-white border border-gray-600 rounded-md px-3 py-2 outline-none  font-Montserrat"
                                 >
                                 {LangContext.allowedLangs.map((lang) => (
                                 <option key={lang} value={lang} className="bg-gray-800 text-white">

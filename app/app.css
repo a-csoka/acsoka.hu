@@ -3,14 +3,14 @@
 
 @theme {
   --font-Montserrat: "Montserrat";
-  --font-Brooklyn: "Brooklyn";
+  --font-Gilmer: "Gilmer";
 
   --color-MainBlue: #00c5f0;
   --color-EerieBlack: #222222;
   --color-LuckyGreen: #0c9e5a;
 }
 
-@font-face {  font-family: Brooklyn; src: url("./assets/fonts/Brooklyn.ttf");}
+@font-face {  font-family: Gilmer; src: url("./assets/fonts/Gilmer.otf");}
 
 html,
 body {

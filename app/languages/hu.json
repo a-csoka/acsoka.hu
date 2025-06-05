@@ -1,9 +1,15 @@
 {
     "Meta": {
-        "title": "Csóka Csaba",
+        "title": "Csóka Csaba - Portfólió Weboldal",
         "description": "hu"
     },
     "Navbar": {
 
+    },
+    "AboutMe": {
+        "header": "RÓLAM",
+        "name": "Csóka Csaba",
+        "title": "Egyetemi hallgató",
+        "introduction": "Üdvözlöm weboldalamon! Jelenleg a Pannon Egyetem Műszaki Informatikai Karán tanulok Programtervező Informatikus BSc szakon. Már középiskolában is tudatosan készültem erre a pályára: Számítógépes rendszerkarbantartó, majd Szoftverfejlesztő és -tesztelő képesítést szereztem. Azóta is folyamatosan bővítem ismereteimet egyetemi tanulmányok, otthoni projektek és online kurzusok révén. Célom, hogy elméleti tudásomat gyakorlati tapasztalattal kiegészítve naprakész, stabil alapokat teremtsek a jövőbeli kihívásokhoz. Kiemelten érdekel a web- és mobilalkalmazás-fejlesztés. Fontos számomra a precizitás, az igényes munkavégzés és a csapatmunkára való nyitottság. Jó együttműködési készséggel és szervezőképességgel rendelkezem, feladataimat hatékonyan tervezem és végzem. Hiszek abban, hogy a folyamatos tanulás és a gyakorlati tapasztalat elengedhetetlen a fejlődéshez, ezért portfóliómban olyan projekteket mutatok be, amelyek legjobban tükrözik érdeklődésemet, fejlődési irányomat és szakmai céljaimat."
     }
 }
