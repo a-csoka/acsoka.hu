@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <nav className='w-full mt-2 fixed top-0 left-0 z-50'>
+        <nav className='w-full mt-2 fixed z-50'>
             <div className='w-[98.75%] h-12 mx-auto bg-gradient-to-r from-MainBlue to-LuckyGreen pt-1 rounded-md'>
                 <div className='w-full h-full rounded-md bg-gray-900'>
                     <div className='flex flex-row items-center h-full w-full justify-between'>

@@ -11,5 +11,14 @@
         "name": "Csaba Csóka",
         "title": "College student",
         "introduction": "Welcome to my website! I am currently studying Computer Science BSc at the Faculty of Information Technology, University of Pannonia. I have been consciously preparing for this career since high school: first earning a qualification as a Computer System Maintenance Technician, then as a Software Developer and Tester. Since then, I have been continuously expanding my knowledge through university studies, personal projects, and online courses. My goal is to complement my theoretical knowledge with practical experience, building up-to-date and solid foundations for future challenges. I am particularly interested in web and mobile application development. Precision, high-quality work, and openness to teamwork are especially important to me. I have good collaboration and organizational skills, and I plan and execute my tasks efficiently. I believe that continuous learning and hands-on experience are essential for growth, which is why my portfolio showcases projects that best reflect my interests, development path, and professional goals."
+    },
+    "Services": {
+        "header": "SERVICES",
+        "service_webdev_name": "Website and Web Application Development",
+        "service_webdev_description": "Development of modern websites and web applications tailored to individual needs. Whether it's a portfolio site, business system, or interactive user interface, I work with modern technologies and responsive design. I handle the entire development process from planning through implementation to optimization. My main goal is to deliver a fast, secure, and easy-to-use end product.",
+        "service_discord_name": "Discord Bot Development",
+        "service_discord_description": "Development of custom Discord bots with automated functions, moderation tools, and game integrations. The bots are built for reliable performance, scalable backend, and easy-to-use commands, suitable for both small communities and larger servers.",
+        "service_mta_name": "Multi Theft Auto: San Andreas Server Development",
+        "service_mta_description": "Development of customized MTA:SA servers with unique game modes, user interfaces, systems, and integration with external applications (such as premium-rate call systems, Discord servers, or API connections). I primarily work with custom scripts written from scratch."
     }
 }

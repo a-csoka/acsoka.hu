@@ -14,10 +14,23 @@
 
 html,
 body {
-  @apply bg-linear-to-b from-black to-EerieBlack h-full;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  }
+
+  .mask {
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    padding: 3px;
+    box-sizing: border-box;
   }
 }
 

@@ -7,6 +7,7 @@ import en from "../languages/en.json";
 import hu from "../languages/hu.json";
 import Navbar from '~/components/Navbar_component';
 import AboutMe from '~/components/AboutMe_component';
+import Services from '~/components/Services_component';
 
 const DefaultLanguage = "en";
 const langMap = {
@@ -46,10 +47,12 @@ const App = (props: Route.LoaderArgs) => {
         <LanguageContext.Provider value={{ lang, translations: langJSON, allowedLangs: allowedLangs }}>
             <MetaTags title={langJSON.Meta.title} description={langJSON.Meta.description} />
             <Navbar />
-            <div className='mx-6 pt-25'>
-                <AboutMe />
+            <div className='bg-[url("wp.png")] bg-cover bg-center'>
+                <div className='mx-6 pt-25'>
+                    <AboutMe />
+                    <Services />
+                </div>
             </div>
-
         </LanguageContext.Provider>
     );
 };
