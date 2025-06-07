@@ -8,6 +8,7 @@ import hu from "../languages/hu.json";
 import Navbar from '~/components/Navbar_component';
 import AboutMe from '~/components/AboutMe_component';
 import Services from '~/components/Services_component';
+import Technologies from '~/components/Technologies_component';
 
 const DefaultLanguage = "en";
 const langMap = {
@@ -51,6 +52,12 @@ const App = (props: Route.LoaderArgs) => {
                 <div className='mx-6 pt-25'>
                     <AboutMe />
                     <Services />
+                </div>
+                <div className='bg-gradient-to-b from-transparent to-black h-12'/>
+            </div>
+            <div className='bg-black'>
+                <div className='mx-6'>
+                    <Technologies />
                 </div>
             </div>
         </LanguageContext.Provider>

@@ -20,5 +20,8 @@
         "service_discord_description": "Egyedi igényekre szabott Discord-botok fejlesztése automatizált funkciókkal, moderációs eszközökkel, játék integrációkkal. A botokat megbízható működéssel, skálázható háttérrel és könnyen kezelhető parancsokkal készítem el, akár kisebb közösségek, akár nagyobb szerverek számára.",
         "service_mta_name": "Multi Theft Auto: San Andreas-szerver fejlesztés",
         "service_mta_description": "Testreszabott MTA:SA szerverek fejlesztése egyedi játékmódokkal, felhasználói felületekkel, rendszerekkel és külső alkalmazások integrációjával (például emelt díjas hívásrendszer, Discord-szerver vagy API-összekötés). Főként nulláról írt, egyedi scriptekkel dolgozom."
+    },
+    "Technologies": {
+        "header": "TECHNOLÓGIÁK"
     }
 }
