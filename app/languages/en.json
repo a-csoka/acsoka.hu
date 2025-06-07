@@ -20,5 +20,8 @@
         "service_discord_description": "Development of custom Discord bots with automated functions, moderation tools, and game integrations. The bots are built for reliable performance, scalable backend, and easy-to-use commands, suitable for both small communities and larger servers.",
         "service_mta_name": "Multi Theft Auto: San Andreas Server Development",
         "service_mta_description": "Development of customized MTA:SA servers with unique game modes, user interfaces, systems, and integration with external applications (such as premium-rate call systems, Discord servers, or API connections). I primarily work with custom scripts written from scratch."
+    },
+    "Technologies": {
+        "header": "TECHNOLOGIES"
     }
 }
