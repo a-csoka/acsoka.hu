@@ -10,6 +10,7 @@ import AboutMe from '~/components/AboutMe_component';
 import Services from '~/components/Services_component';
 import Technologies from '~/components/Technologies_component';
 import Qualifications from '~/components/Qualifications_component';
+import Accomplishments from '~/components/Accomplishments_component';
 
 const DefaultLanguage = "en";
 const langMap = {
@@ -56,11 +57,15 @@ const App = (props: Route.LoaderArgs) => {
                 </div>
                 <div className='bg-gradient-to-b from-transparent to-black h-12'/>
             </div>
-            <div className='bg-black'>
+            <div className='bg-black pb-6'>
                 <div className='mx-6'>
                     <Technologies />
                     <Qualifications />
                 </div>
+            </div>
+            <div className='bg-gradient-to-b from-black to-transparent h-12'/>
+            <div className='mx-6'>
+                <Accomplishments />
             </div>
         </LanguageContext.Provider>
     );

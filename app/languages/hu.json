@@ -30,5 +30,12 @@
         "comptech": "Számítógépes rendszerkarbantartó",
         "softdev": "Szoftverfejlesztő és -tesztelő",
         "compsci": "Programtervező informatikus BSc"
+    },
+    "Accomplishments": {
+        "header": "EREDMÉNYEK",
+        "1st": "1. helyezett",
+        "2nd": "2. helyezett",
+        "3rd": "3. helyezett",
+        "special": "Különdíj"
     }
 }

@@ -30,5 +30,12 @@
         "comptech": "Computer systems maintenance technician",
         "softdev": "Software developer and tester",
         "compsci": "Computer science BSc"
+    },
+    "Accomplishments": {
+        "header": "ACCOMPLISHMENTS",
+        "1st": "1st place",
+        "2nd": "2nd place",
+        "3rd": "3rd place",
+        "special": "Special prize"
     }
 }
