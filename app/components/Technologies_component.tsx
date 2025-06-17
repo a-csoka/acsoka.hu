@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '~/context/LanguageContext';
 import TechnologyCard from './Technology-Card_component';
+import SectionTitle from './SectionTitle_component';
 
 const TechnologyList = [
     {
@@ -61,7 +62,7 @@ const Technologies: React.FC = () => {
 
     return (
         <div className='w-full'>
-            <h1 className='text-center text-4xl font-bold font-Gilmer bg-gradient-to-r from-MainBlue to-LuckyGreen text-transparent bg-clip-text drop-shadow-black drop-shadow-lg'>{LangContext.translations.Technologies["header"]}</h1>
+            <SectionTitle>{LangContext.translations.Technologies["header"]}</SectionTitle>
             <div className='relative mt-12'>
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-MainBlue to-LuckyGreen mask pointer-events-none z-0" />
                 <div className='grid grid-cols-4 gap-6 items-stretch relative z-10 p-6'>

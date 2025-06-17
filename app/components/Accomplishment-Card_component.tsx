@@ -35,7 +35,7 @@ const AccomplishmentCard: React.FC<Props> = ({Accomplishment}) => {
                 <div className="absolute left-0 right-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-EerieBlack" />
             </div>
             <div className='flex flex-col m-4 h-full'>
-                <h2 className='text-xl font-Gilmer font-bold'>{Name}</h2>
+                <h2 className='text-xl font-Gilmer font-bold bg-gradient-to-r from-MainBlue to-LuckyGreen text-transparent bg-clip-text w-fit'>{Name}</h2>
                 <h3 className='text-sm font-Gilmer'>{Organizer}</h3>
                 <div className='grid grid-cols-4 gap-1 mt-1'>
                     {Badges.map((badge, index) => (

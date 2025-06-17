@@ -5,6 +5,7 @@ import ServiceCard from './Service-Card_component';
 import WebdevIcon from './ServiceIcons/Webdev_icon';
 import DiscordIcon from './ServiceIcons/Discord_icon';
 import MTAIcon from './ServiceIcons/MTA_icon';
+import SectionTitle from './SectionTitle_component';
 
 const Services: React.FC = () => {
     const LangContext = useLanguage()
@@ -28,7 +29,7 @@ const Services: React.FC = () => {
 
     return (
         <div className='w-full pt-12'>
-            <h1 className='text-center text-4xl font-bold font-Gilmer bg-gradient-to-r from-MainBlue to-LuckyGreen text-transparent bg-clip-text drop-shadow-black drop-shadow-lg'>{LangContext.translations.Services["header"]}</h1>
+            <SectionTitle>{LangContext.translations.Services["header"]}</SectionTitle>
             <div className='grid grid-cols-3 gap-12 mt-12 items-stretch'>
                 {ServiceList.map((service, index) => (
                     <ServiceCard key={index} Service={service} />

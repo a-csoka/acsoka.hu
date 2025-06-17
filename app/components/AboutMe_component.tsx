@@ -2,13 +2,14 @@ import React from 'react';
 import { useLanguage } from '~/context/LanguageContext';
 
 import Me from "../assets/images/Me.jpg"
+import SectionTitle from './SectionTitle_component';
 
 const AboutMe: React.FC = () => {
     const LangContext = useLanguage()
 
     return (
         <div className='w-full'>
-            <h1 className='text-center text-4xl font-bold font-Gilmer bg-gradient-to-r from-MainBlue to-LuckyGreen text-transparent bg-clip-text drop-shadow-black drop-shadow-lg'>{LangContext.translations.AboutMe["header"]}</h1>
+            <SectionTitle>{LangContext.translations.AboutMe["header"]}</SectionTitle>
             <div className='grid grid-cols-2 w-full h-full'>
                 <div className='flex flex-col justify-end items-center my-12'>
                     <div>

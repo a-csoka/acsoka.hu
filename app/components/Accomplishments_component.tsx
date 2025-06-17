@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '~/context/LanguageContext';
 import AccomplishmentCard from './Accomplishment-Card_component';
+import SectionTitle from './SectionTitle_component';
 
 const AccomplishmentList = [
     {
@@ -39,8 +40,8 @@ const Accomplishments: React.FC = () => {
 
     return (
         <div className=''>
-            <h1 className='text-center text-4xl font-bold font-Gilmer bg-gradient-to-r from-MainBlue to-LuckyGreen text-transparent bg-clip-text drop-shadow-black drop-shadow-lg'>{LangContext.translations.Accomplishments["header"]}</h1>
-            <div className='grid grid-cols-4 pt-4 gap-16 pb-16'>
+            <SectionTitle>{LangContext.translations.Accomplishments["header"]}</SectionTitle>
+            <div className='grid grid-cols-4 pt-4 gap-16'>
                 {AccomplishmentList.map((element, index) => (
                     <AccomplishmentCard Accomplishment={element} key={index} />
                 ))}
