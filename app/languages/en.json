@@ -23,5 +23,12 @@
     },
     "Technologies": {
         "header": "TECHNOLOGIES"
+    },
+    "Qualifications": {
+        "header": "QUALIFICATIONS",
+        "ongoing": "In progress",
+        "comptech": "Computer systems maintenance technician",
+        "softdev": "Software developer and tester",
+        "compsci": "Computer science BSc"
     }
 }

@@ -23,5 +23,12 @@
     },
     "Technologies": {
         "header": "TECHNOLÓGIÁK"
+    },
+    "Qualifications": {
+        "header": "KÉPESÍTÉSEK",
+        "ongoing": "Folyamatban",
+        "comptech": "Számítógépes rendszerkarbantartó",
+        "softdev": "Szoftverfejlesztő és -tesztelő",
+        "compsci": "Programtervező informatikus BSc"
     }
 }

@@ -9,6 +9,7 @@ import Navbar from '~/components/Navbar_component';
 import AboutMe from '~/components/AboutMe_component';
 import Services from '~/components/Services_component';
 import Technologies from '~/components/Technologies_component';
+import Qualifications from '~/components/Qualifications_component';
 
 const DefaultLanguage = "en";
 const langMap = {
@@ -58,6 +59,7 @@ const App = (props: Route.LoaderArgs) => {
             <div className='bg-black'>
                 <div className='mx-6'>
                     <Technologies />
+                    <Qualifications />
                 </div>
             </div>
         </LanguageContext.Provider>
