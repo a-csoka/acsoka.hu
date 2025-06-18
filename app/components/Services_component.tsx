@@ -2,9 +2,9 @@ import React from 'react';
 import { useLanguage } from '~/context/LanguageContext';
 import ServiceCard from './Service-Card_component';
 
-import WebdevIcon from './ServiceIcons/Webdev_icon';
-import DiscordIcon from './ServiceIcons/Discord_icon';
-import MTAIcon from './ServiceIcons/MTA_icon';
+import WebdevIcon from '../assets/images/icons/Webdev_icon.svg';
+import DiscordBotIcon from '../assets/images/icons/DiscordBot_icon.svg';
+import MTAIcon from '../assets/images/icons/MTA_icon.svg';
 import SectionTitle from './SectionTitle_component';
 
 const Services: React.FC = () => {
@@ -16,7 +16,7 @@ const Services: React.FC = () => {
             Description: LangContext.translations.Services["service_webdev_description"],
         },        
         {
-            Icon: DiscordIcon,
+            Icon: DiscordBotIcon,
             Name: LangContext.translations.Services["service_discord_name"],
             Description: LangContext.translations.Services["service_discord_description"],
         },        
