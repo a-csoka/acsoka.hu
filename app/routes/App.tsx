@@ -57,7 +57,7 @@ const App = (props: Route.LoaderArgs) => {
 
                 <MetaTags title={langJSON.Meta.title} description={langJSON.Meta.description} lang={lang} />
                 <Navbar />
-                <div className='bg-[url("wp.png")] bg-cover bg-center'>
+                <div className='bg-[url("/wp.png")] bg-cover bg-center'>
                     <div className='mx-6 pt-25'>
                         <AboutMe />
                         <Services />
