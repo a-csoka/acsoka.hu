@@ -33,7 +33,7 @@ const Qualifications: React.FC = () => {
     return (
         <div className='pt-12'>
             <SectionTitle>{LangContext.translations.Qualifications["header"]}</SectionTitle>
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
                 {QualificationsList.map((element, index) => (
                     <QualificationCard Qualification={element} key={index}/>
                 ))}

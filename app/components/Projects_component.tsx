@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
     return (
         <div className='pt-12'>
             <SectionTitle>{LangContext.translations.Projects["header"]}</SectionTitle>
-            <div className='grid grid-cols-4 gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
                 {ProjectList.map(({Image, Name, Description, X, Y, Icons, Links}, index) => (
                     <ImageCard Data={{
                         Image: Image,

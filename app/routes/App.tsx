@@ -65,7 +65,7 @@ const App = (props: Route.LoaderArgs) => {
                 </div>
             </div>
             <div className='bg-gradient-to-b from-black to-transparent h-12'/>
-            <div className='mx-6'>
+            <div className='mx-6 pb-8'>
                 <Accomplishments />
                 <Projects />
             </div>

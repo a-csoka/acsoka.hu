@@ -19,7 +19,7 @@ const TechnologyCard: React.FC<Props> = ({ Tech }) => {
             style={{ borderColor: Color }}
         >
             <div className="absolute inset-0 -z-10" style={{ backgroundColor: Color, opacity: 0.1 }} />
-            <div className='flex justify-center w-full h-30 my-6 aspect-square'>
+            <div className='flex justify-center w-full h-30 my-6 aspect-square p-2'>
                 <img src={Icon} alt={Name} />
             </div>
             <h2 className='font-Gilmer font-bold text-4xl my-6 text-center'>{Name}</h2>

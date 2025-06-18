@@ -12,7 +12,7 @@ const Technologies: React.FC = () => {
             <SectionTitle>{LangContext.translations.Technologies["header"]}</SectionTitle>
             <div className='relative'>
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-MainBlue to-LuckyGreen mask pointer-events-none z-0" />
-                <div className='grid grid-cols-4 gap-6 items-stretch relative z-10 p-6'>
+                <div className='grid gric-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch relative z-10 p-6'>
                     {Object.entries(TechnologyList).map(([name, tech], index) => (
                         <TechnologyCard
                             key={index}

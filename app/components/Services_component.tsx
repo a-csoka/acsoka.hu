@@ -30,7 +30,7 @@ const Services: React.FC = () => {
     return (
         <div className='pt-12'>
             <SectionTitle>{LangContext.translations.Services["header"]}</SectionTitle>
-            <div className='grid grid-cols-3 gap-12 items-stretch'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 items-stretch'>
                 {ServiceList.map((service, index) => (
                     <ServiceCard key={index} Service={service} />
                 ))}
