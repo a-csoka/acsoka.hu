@@ -49,25 +49,28 @@ const App = (props: Route.LoaderArgs) => {
     const langJSON = langMap[props.params.lang as AllowedLang];
     return (
         <LanguageContext.Provider value={{ lang, translations: langJSON, allowedLangs: allowedLangs }}>
-            <MetaTags title={langJSON.Meta.title} description={langJSON.Meta.description} />
-            <Navbar />
-            <div className='bg-[url("wp.png")] bg-cover bg-center'>
-                <div className='mx-6 pt-25'>
-                    <AboutMe />
-                    <Services />
+            <div>
+
+                <MetaTags title={langJSON.Meta.title} description={langJSON.Meta.description} />
+                <Navbar />
+                <div className='bg-[url("wp.png")] bg-cover bg-center'>
+                    <div className='mx-6 pt-25'>
+                        <AboutMe />
+                        <Services />
+                    </div>
+                    <div className='bg-gradient-to-b from-transparent to-black h-12'/>
                 </div>
-                <div className='bg-gradient-to-b from-transparent to-black h-12'/>
-            </div>
-            <div className='bg-black pb-6'>
-                <div className='mx-6'>
-                    <Technologies />
-                    <Qualifications />
+                <div className='bg-black pb-6'>
+                    <div className='mx-6'>
+                        <Technologies />
+                        <Qualifications />
+                    </div>
                 </div>
-            </div>
-            <div className='bg-gradient-to-b from-black to-transparent h-12'/>
-            <div className='mx-6 pb-8'>
-                <Accomplishments />
-                <Projects />
+                <div className='bg-gradient-to-b from-black to-transparent h-12'/>
+                <div className='mx-6 pb-8'>
+                    <Accomplishments />
+                    <Projects />
+                </div>
             </div>
         </LanguageContext.Provider>
     );

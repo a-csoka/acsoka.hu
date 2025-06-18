@@ -28,7 +28,7 @@ const Services: React.FC = () => {
     ]
 
     return (
-        <div className='pt-12'>
+        <div className='pt-12' id="services">
             <SectionTitle>{LangContext.translations.Services["header"]}</SectionTitle>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 items-stretch'>
                 {ServiceList.map((service, index) => (

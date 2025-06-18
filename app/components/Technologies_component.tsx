@@ -8,7 +8,7 @@ const Technologies: React.FC = () => {
     const LangContext = useLanguage()
 
     return (
-        <div>
+        <div id="technologies">
             <SectionTitle>{LangContext.translations.Technologies["header"]}</SectionTitle>
             <div className='relative'>
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-MainBlue to-LuckyGreen mask pointer-events-none z-0" />

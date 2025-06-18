@@ -39,7 +39,7 @@ const Accomplishments: React.FC = () => {
     const LangContext = useLanguage()
 
     return (
-        <div>
+        <div id="accomplishments">
             <SectionTitle>{LangContext.translations.Accomplishments["header"]}</SectionTitle>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16'>
                 {AccomplishmentList.map(({ Image, Name, Organizer, Date, X, Y, Badges }, index) => (

@@ -11,7 +11,7 @@ const AboutMe: React.FC = () => {
     const LangContext = useLanguage()
 
     return (
-        <div>
+        <div id="aboutme">
             <SectionTitle>{LangContext.translations.AboutMe["header"]}</SectionTitle>
             <div className='grid grid-cols-1 lg:grid-cols-2 w-full h-full'>
                 <div className='flex flex-col justify-end items-center my-12'>
