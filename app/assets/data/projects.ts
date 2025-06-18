@@ -1,4 +1,4 @@
-import { TechnologyList } from '../../components/Technologies_component';
+import { TechnologyList } from './technologies';
 
 import WebIcon from '../images/icons/Web_icon.svg';
 import DiscordIcon from '../images/icons/Discord_icon.svg';
