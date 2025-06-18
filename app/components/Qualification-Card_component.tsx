@@ -28,10 +28,10 @@ const QualificationCard: React.FC<Props> = ({Qualification}) => {
             <div className='relative z-10'>
             <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-0 items-center justify-items-center'>
                 <div className='h-40 aspect-square'>
-                <img src={Logo} />
+                <img src={Logo} alt={Name}/>
                 </div>
                 <div className='w-full'>
-                <h3 className='mx-4 text-center sm:text-left font-Gilmer text-2xl'>{Name}</h3>
+                <h2 className='mx-4 text-center sm:text-left font-Gilmer text-2xl'>{Name}</h2>
                 </div>
             </div>
             <div className='mt-8'>

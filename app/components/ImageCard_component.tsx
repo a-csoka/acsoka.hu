@@ -45,6 +45,7 @@ const ImageCard: React.FC<Props> = ({Data}) => {
                     src={Image}
                     className="rounded-t-2xl w-full h-85 object-cover"
                     style={{objectPosition: X + Y}}
+                    alt={Title}
                 />
                 <div className="absolute left-0 right-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-EerieBlack" />
             </div>

@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
                             className="w-32 bg-gray-800 text-white border border-gray-600 rounded-md px-3 py-2 outline-none font-Gilmer"
                         >
                             {LangContext.allowedLangs.map((lang) => (
-                                <option key={lang} value={lang} className="bg-gray-800 text-white">
+                                <option key={lang} value={lang} label={language[lang]} className="bg-gray-800 text-white">
                                     {language[lang]}
                                 </option>
                             ))}

@@ -4,11 +4,11 @@ import WebIcon from '../images/icons/Web_icon.svg';
 import DiscordIcon from '../images/icons/Discord_icon.svg';
 import GitHubIcon from "../images/icons/GitHub_icon.svg"
 
-import CANopener_Image from "../images/projects/CANopener.png"
-import ReserveIt_Image from "../images/projects/ReserveIt.png"
-import DBLock_Image from "../images/projects/DBLock.png"
-import MHP_Image from "../images/projects/MHP.png"
-import ACsoka_Image from "../images/projects/acsoka.png"
+import CANopener_Image from "../images/projects/CANopener.webp"
+import ReserveIt_Image from "../images/projects/ReserveIt.webp"
+import DBLock_Image from "../images/projects/DBLock.webp"
+import MHP_Image from "../images/projects/MHP.webp"
+import ACsoka_Image from "../images/projects/acsoka.webp"
 
 export const ProjectList = [
     {

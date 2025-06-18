@@ -21,10 +21,14 @@ const langMap = {
 const allowedLangs = ["hu", "en"];
 type AllowedLang = keyof typeof langMap;
 
-const MetaTags = ({ title, description }: { title: string; description: string }) => (
+const MetaTags = ({ title, description, lang }: { title: string; description: string; lang:string }) => (
     <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <link rel="alternate" hrefLang="hu" href="https://www.acsoka.hu/hu" />
+        <link rel="alternate" hrefLang="en" href="https://www.acsoka.hu/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.acsoka.hu/en" />
+        <link rel="canonical" href={`https://www.acsoka.hu/${lang}`} />
     </Helmet>
 );
 
@@ -51,7 +55,7 @@ const App = (props: Route.LoaderArgs) => {
         <LanguageContext.Provider value={{ lang, translations: langJSON, allowedLangs: allowedLangs }}>
             <div>
 
-                <MetaTags title={langJSON.Meta.title} description={langJSON.Meta.description} />
+                <MetaTags title={langJSON.Meta.title} description={langJSON.Meta.description} lang={lang} />
                 <Navbar />
                 <div className='bg-[url("wp.png")] bg-cover bg-center'>
                     <div className='mx-6 pt-25'>
