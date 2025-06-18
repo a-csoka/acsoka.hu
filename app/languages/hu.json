@@ -37,5 +37,13 @@
         "2nd": "2. helyezett",
         "3rd": "3. helyezett",
         "special": "Különdíj"
+    },
+    "Projects": {
+        "header": "PROJEKTEK",
+        "canopener": "A 2025 tavaszán megrendezett Techtogether mérnöki versenyre egy olyan webes alkalmazást fejlesztettünk, amely járművek belső adatkommunikációs rendszeréből (CAN) származó információk megjelenítésére szolgál. A rendszer képes egyszerre több adatforrást kezelni, valamint visszajátszási funkcióval is rendelkezik, amely lehetővé teszi a korábban rögzített adatok időalapú elemzését. A projekt során a felhasználói felület tervezése és megvalósítása az én feladatom volt. Az elkészült alkalmazás elnyerte az msg Plaut által felajánlott különdíjat.",
+        "reserveit": "Egy olyan weboldal fejlesztésén dolgoztunk, amely lehetővé teszi vállalkozások számára, hogy egyszerűen kioszthassanak időpontokat ügyfeleiknek. A felhasználók regisztrálhatnak, létrehozhatják saját vállalkozásukat, valamint nyomon követhetik a kijelölt időpontjaikat. A vállalkozások tulajdonosai továbbá dolgozókat vehetnek fel, akik szintén kezelhetik és kioszthatják az időpontokat az ügyfelek számára. A projektet ketten készítettük el, ahol társam a design feladatokat vállalta, én pedig a programozási munkálatokat végeztem.",
+        "dblock": "A weboldalt egy öttagú csoportban kellett elkészítenünk egy előre megadott példa alapján. A fejlesztést egy olasz vállalat számára valósítottuk meg az Erasmus+ program keretében. Ezt követően a projektet önállóan is elkészítettem, melyre körülbelül 18 óra munkát fordítottam.",
+        "mhp": "A szerver a Multi Theft Auto: San Andreas platformra épül, és az aktív fejlesztői szerepkörömtől való visszalépésem időpontjában két játékmódot tartalmazott: Hot Pursuit, amelyben a játékosok egy- vagy kétfős csapatokban üldöznek egy kiválasztott célcsapatot, valamint Clan War, ahol két csapat verseng a pályán található stratégiai pontok elfoglalásáért. A fejlesztés során felelősségi körömbe tartozott a szerver technikai alapjainak kialakítása, a kezdeti felhasználói felületek tervezése és implementálása, továbbá különféle kisebb rendszerek megvalósítása, úgymint: emelt díjas hívások automatikus kezelése, Discord bot és webhook integráció, járműfájlok titkosítása.",
+        "acsoka": "Portfólió weboldalam, amely bemutatja az általam elsajátított technológiákat, megvalósított projektjeimet és eddigi eredményeimet."
     }
 }

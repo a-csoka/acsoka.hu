@@ -11,6 +11,7 @@ import Services from '~/components/Services_component';
 import Technologies from '~/components/Technologies_component';
 import Qualifications from '~/components/Qualifications_component';
 import Accomplishments from '~/components/Accomplishments_component';
+import Projects from '~/components/Projects_component';
 
 const DefaultLanguage = "en";
 const langMap = {
@@ -66,6 +67,7 @@ const App = (props: Route.LoaderArgs) => {
             <div className='bg-gradient-to-b from-black to-transparent h-12'/>
             <div className='mx-6'>
                 <Accomplishments />
+                <Projects />
             </div>
         </LanguageContext.Provider>
     );

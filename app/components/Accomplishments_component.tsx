@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '~/context/LanguageContext';
-import AccomplishmentCard from './Accomplishment-Card_component';
+import ImageCard from './ImageCard_component';
 import SectionTitle from './SectionTitle_component';
 
 const AccomplishmentList = [
@@ -42,8 +42,22 @@ const Accomplishments: React.FC = () => {
         <div className=''>
             <SectionTitle>{LangContext.translations.Accomplishments["header"]}</SectionTitle>
             <div className='grid grid-cols-4 pt-4 gap-16'>
-                {AccomplishmentList.map((element, index) => (
-                    <AccomplishmentCard Accomplishment={element} key={index} />
+                {AccomplishmentList.map(({ Image, Name, Organizer, Date, X, Y, Badges }, index) => (
+                    <ImageCard
+                        Data={{
+                            Image: Image,
+                            Title: Name,
+                            SubTitle: Organizer,
+                            BottomText: Date,
+                            X: X,
+                            Y: Y,
+                            Badges: Badges.map(badge => ({
+                                Name: LangContext.translations.Accomplishments[badge.Name],
+                                Color: badge.Color,
+                            })),
+                        }}
+                        key={index}
+                    />
                 ))}
             </div>
         </div>

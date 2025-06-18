@@ -37,5 +37,13 @@
         "2nd": "2nd place",
         "3rd": "3rd place",
         "special": "Special prize"
+    },
+    "Projects": {
+        "header": "PROJECTS",
+        "canopener": "For the Techtogether engineering competition held in the spring of 2025, we developed a web application designed to display data from in-vehicle communication systems (CAN). The system is capable of handling multiple data sources simultaneously and includes a playback feature that allows for time-based analysis of previously recorded data. My responsibility in the project was the design and implementation of the user interface. The completed application was awarded a special prize by msg Plaut.",
+        "reserveit": "We developed a website that enables businesses to easily schedule appointments for their clients. Users can register, create their own business profiles, and track their scheduled appointments. Business owners can also add employees who are authorized to manage and assign appointments to clients. The project was completed by two of us, with my partner handling the design tasks and me taking care of the programming work.",
+        "dblock": "The website was developed by a team of five based on a predefined example. The project was carried out for an Italian company within the framework of the Erasmus+ program. Subsequently, I also completed the project independently, dedicating approximately 18 hours to the task.",
+        "mhp": "The server is built on the Multi Theft Auto: San Andreas platform and, at the time of stepping back from my active development role, featured two game modes: Hot Pursuit, where players form one- or two-person teams to pursue a designated target team, and Clan War, where two teams compete to capture strategic points on the map. During the development process, I was responsible for establishing the server’s technical foundation, designing and implementing the initial user interfaces, and developing various supporting systems such as the automated handling of premium-rate phone calls, Discord bot and webhook integration, and the encryption of vehicle files.",
+        "acsoka": "My portfolio website showcasing the technologies I have mastered, the projects I have completed, and my achievements to date."
     }
 }
