@@ -39,9 +39,9 @@ const Accomplishments: React.FC = () => {
     const LangContext = useLanguage()
 
     return (
-        <div className=''>
+        <div>
             <SectionTitle>{LangContext.translations.Accomplishments["header"]}</SectionTitle>
-            <div className='grid grid-cols-4 pt-4 gap-16'>
+            <div className='grid grid-cols-4 gap-16'>
                 {AccomplishmentList.map(({ Image, Name, Organizer, Date, X, Y, Badges }, index) => (
                     <ImageCard
                         Data={{
