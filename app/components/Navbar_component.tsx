@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
             navigate(`/${event.target.value}`, { replace: true });
         }
         setSelectedLang(event.target.value);
-        setIsOpen(false); // Close menu after language change
+        setIsOpen(false);
     };
 
     const handleNavClick = (to: string) => {
@@ -38,8 +38,9 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className='w-full mt-2 fixed z-50'>
-            <div className='w-[98.75%] h-12 mx-auto bg-gradient-to-r from-MainBlue to-LuckyGreen pt-0.5 rounded-lg'>
-                <div className={'w-full h-full bg-gray-900 flex items-center justify-between px-4 '+(isOpen ? "rounded-t-lg" : "rounded-lg")}>
+            <div className='w-[98.75%] h-12 mx-auto rounded-b-lg overflow-hidden'>
+                <div className='h-[2px] bg-gradient-to-r rounded-t-lg from-MainBlue to-LuckyGreen'/>
+                <div className={'w-full h-full bg-gray-900 flex items-center justify-between px-4 '+(isOpen ? "rounded-t-lg" : "rounded-b-lg")}>
                     <div className='font-Gilmer font-bold text-xl bg-gradient-to-r from-MainBlue to-LuckyGreen text-transparent bg-clip-text'>
                         ACSOKA.HU
                     </div>

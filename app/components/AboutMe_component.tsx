@@ -3,7 +3,7 @@ import { useLanguage } from '~/context/LanguageContext';
 
 import { ContactList } from '~/assets/data/contacts';
 
-import Me from "../assets/images/Me.jpg"
+import Me from "../assets/images/Me.png"
 import SectionTitle from './SectionTitle_component';
 import { Link } from 'react-router';
 
